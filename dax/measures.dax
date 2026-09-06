@@ -1,0 +1,35 @@
+Total Sales =
+SUM(fact_orders[sales_amount])
+
+Total Profit =
+SUM(fact_orders[profit])
+
+Total Orders =
+DISTINCTCOUNT(fact_orders[order_id])
+
+Total Customers =
+DISTINCTCOUNT(fact_orders[customer_key])
+
+Return Orders =
+CALCULATE(
+    [Total Orders],
+    fact_orders[transaction_type] = "RETURN"
+)
+
+Return Rate =
+DIVIDE(
+    [Return Orders],
+    [Total Orders]
+)
+
+Average Order Value =
+DIVIDE(
+    [Total Sales],
+    [Total Orders]
+)
+
+Profit Margin =
+DIVIDE(
+    [Total Profit],
+    [Total Sales]
+)
