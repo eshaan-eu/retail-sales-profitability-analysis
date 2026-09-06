@@ -60,21 +60,9 @@ The objective was to build a trustworthy analytical layer that would allow the b
 
 ---
 
-## ☁️ Data Pipeline & Architecture
+![☁️ Data Pipeline & Architecture](screenshots/data_pipeline.png)
 
-```text
-Raw CSV Files
-     ↓
-Google Cloud Storage
-     ↓
-BigQuery Raw Layer
-     ↓
-BigQuery Staging / Cleaning
-     ↓
-BigQuery Gold / Star Schema
-     ↓
-Power BI + DAX
-     ↓
+
 Dashboard & Business Insights
 ```
 
