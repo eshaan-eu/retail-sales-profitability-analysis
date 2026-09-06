@@ -192,6 +192,10 @@ Additional analytical measures were prepared for:
 - Average Order Value
 - Profit Margin
 
+The complete DAX definitions are stored here:
+
+### [`measures.dax`](./dax/measures.dax)
+
 ---
 
 ## 📈 Power BI Dashboard
