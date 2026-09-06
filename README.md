@@ -244,7 +244,7 @@ The complete DAX definitions are stored here:
 
 ## 📈 Power BI Dashboard
 
-![Power BI Dashboard](images/PowerBI_Dashboard_User.png)
+![Power BI Dashboard](screenshots/Data_Warehouse.png)
 
 The dashboard was designed as an executive-style overview rather than a collection of unrelated charts.
 
