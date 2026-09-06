@@ -202,7 +202,7 @@ This keeps the **source identity** separate from the **warehouse relationship ke
 
 All BigQuery SQL used in the project is consolidated into a single file:
 
-### [`SQL_Queries.sql`](.sql/SQL_Queries.sql)
+### [`SQL_Queries.sql`](.sql/SQL_Queries.ipynb)
 
 The file is organized linearly into these sections:
 
