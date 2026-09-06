@@ -1,6 +1,6 @@
 # 📊 Retail Sales & Profitability Analysis
 
-![Power BI Dashboard](screenshot/dashboard.png)
+![Power BI Dashboard](screenshots/dashboard.png)
 
 An end-to-end retail analytics project built using **Google Cloud Storage, BigQuery, SQL, dimensional modeling, Power BI, and DAX**. The project transforms four raw CSV datasets into a validated **star schema** and an interactive dashboard for analyzing sales, profitability, customers, products, regions, and returns.
 
