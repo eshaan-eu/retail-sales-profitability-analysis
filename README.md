@@ -1,6 +1,6 @@
 # 📊 Retail Sales & Profitability Analysis
 
-![Power BI Dashboard](screenshots/dashboard.png)
+![☁️ Data Pipeline & Architecture](screenshots/data_pipeline.png)
 
 An end-to-end retail analytics project built using **Google Cloud Storage, BigQuery, SQL, dimensional modeling, Power BI, and DAX**. The project transforms four raw CSV datasets into a validated **star schema** and an interactive dashboard for analyzing sales, profitability, customers, products, regions, and returns.
 
@@ -60,19 +60,9 @@ The objective was to build a trustworthy analytical layer that would allow the b
 
 ---
 
-![☁️ Data Pipeline & Architecture](screenshots/data_pipeline.png)
-
-
-Dashboard & Business Insights
-```
-
-The project uses a layered approach so that the **raw source remains preserved**, cleaning happens in staging, and Power BI consumes the analytical warehouse layer.
-
----
-
 ## 🧱 Data Model
 
-![Star Schema](images/Data_Warehouse.png)
+![Star Schema](screenshots/Data_Warehouse.png)
 
 The final warehouse model is centered around `fact_orders` with four dimensions:
 
@@ -206,7 +196,7 @@ Additional analytical measures were prepared for:
 
 ## 📈 Power BI Dashboard
 
-![Power BI Dashboard](screenshots/Data_Warehouse.png)
+![Power BI Dashboard](screenshots/dashboard.png)
 
 The dashboard was designed as an executive-style overview rather than a collection of unrelated charts.
 
