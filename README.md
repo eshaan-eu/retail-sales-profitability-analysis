@@ -164,45 +164,11 @@ The cleaning layer was designed to preserve the raw data and create clean analyt
 
 ---
 
-## 🔐 Handling Missing Dimension References
-
-A key modeling decision involved the **60 orders without a customer ID** and **35 orders without a product ID**.
-
-Instead of deleting those orders, the warehouse contains explicit **Unknown** dimension members with key `0`.
-
-This means:
-
-```text
-Missing customer → customer_key = 0
-Missing product  → product_key  = 0
-```
-
-The transaction remains available for analysis while the missing descriptive information is made explicit.
-
-The same principle can be applied to other dimensions when necessary.
-
----
-
-## 📐 Surrogate Keys
-
-The warehouse dimensions use separate surrogate keys:
-
-- `customer_key`
-- `product_key`
-- `region_key`
-- `date_key`
-
-The original source identifiers such as `customer_id` and `product_id` remain available as business keys.
-
-This keeps the **source identity** separate from the **warehouse relationship key** and provides a clean foundation for dimensional modeling.
-
----
-
 ## 💻 SQL Analysis & Transformation
 
 All BigQuery SQL used in the project is consolidated into a single file:
 
-### [`SQL_Queries.sql`](.sql/SQL_Queries.ipynb)
+### [`SQL_Queries.sql`](sql/SQL_Queries.ipynb)
 
 The file is organized linearly into these sections:
 
@@ -235,10 +201,6 @@ Additional analytical measures were prepared for:
 - Return Rate
 - Average Order Value
 - Profit Margin
-
-The complete DAX definitions are stored here:
-
-### [`measures.dax`](./dax/measures.dax)
 
 ---
 
@@ -309,21 +271,19 @@ retail-sales-profitability-analysis/
 │
 ├── README.md
 ├── sql/
-│  └──SQL_Queries.sql
+│  └──SQL_Queries.ipyub
 │
 ├── dax/
 │   └── measures.dax
-│
-├── images/
-│   ├── Data_Warehouse.png
-│   └── PowerBI_Dashboard_User.png
-│
+
 ├── powerbi/
 │   └── retail_sales_dashboard.pbix
+│   └── dashboard.pdf
 │
 └── screenshots/
     ├── dashboard.png
-    └── dashboard_raw.jpg
+    └── data_pipeline.png
+    └── Data_Warehouse.png
 ```
 
 ---
